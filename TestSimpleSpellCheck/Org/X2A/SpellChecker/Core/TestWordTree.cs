@@ -34,7 +34,7 @@ namespace Org.X2A.SpellChecker.Core
         [TestMethod]
         public void TestGetCorrection()
         {
-            WordTree tree = new WordTree(new string[] {"hell","help","shel","smell",
+            WordTree tree = new WordTree(new string[] {"hell","help","shell","smell",
                            "fell","felt","oops","pop","oouch","halt"});
 
             List<string> matches = tree.GetBestMatch("ops", tolerance: 2);
