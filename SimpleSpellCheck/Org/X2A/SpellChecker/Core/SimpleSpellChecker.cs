@@ -17,7 +17,7 @@ namespace Org.X2A.SpellChecker.Core
 
         public SimpleSpellChecker(ICollection<string> words)
         {
-            words = new HashSet<string>(words);
+            this.words = new HashSet<string>(words);
             correctionTree = new WordTree(words);
         }
 
